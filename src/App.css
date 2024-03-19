@@ -1,0 +1,100 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Code styling */
+code {
+  font-size: 14px;
+  background-color: #e8e8e8; /* Light gray background for code */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Unordered list styling */
+ul {
+  padding-inline-start: 20px;
+}
+
+/* Square styling */
+.square {
+  background: #ffffff; /* White background */
+  border: 1px solid #cccccc; /* Light gray border */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.square:hover {
+  background-color: #e0e0e0; /* Lighter gray background on hover */
+}
+
+/* Clear float after board row */
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* Status message styling */
+.status {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Game container */
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Game info container */
+.game-info {
+  margin-left: 20px;
+}
